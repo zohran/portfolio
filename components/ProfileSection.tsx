@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Profile } from '@/lib/readProfile';
 import SocialLinks from './SocialLinks';
 import { readSocialLinks } from '@/lib/readSocialLinks';
@@ -22,15 +21,8 @@ export default function ProfileSection({ profile }: ProfileSectionProps) {
      <div className="flex flex-col justify-center items-center h-full w-full gap-4">
        <div className="relative w-24 h-24">
          <div className="absolute inset-[-10px] rounded-full border-[5px] border-foreground/10"></div>
-         <div className="relative w-24 h-24 rounded-full overflow-hidden">
-           <Image 
-             src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${profile.name.replace(/\s+/g, '')}`}
-             alt={profile.name} 
-             width={96} 
-             height={96} 
-             className="w-full h-full object-cover"
-             unoptimized
-           />
+         <div className="relative w-24 h-24 rounded-full bg-foreground/10 border-2 border-foreground/20 flex items-center justify-center">
+           <span className="text-3xl font-black text-foreground tracking-tight">ZR</span>
          </div>
        </div>
        <div className="text-4xl md:text-4xl lg:text-6xl uppercase tracking-wider font-black bg-gradient-to-r from-foreground to-foreground/50 bg-clip-text text-transparent font-ougther">
