@@ -24,12 +24,12 @@ export default function ProjectList({
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-2.5 xs:gap-3 sm:gap-4 mb-5 xs:mb-6 sm:mb-8">
         {displayProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      <p className="text-center text-foreground/60 text-lg">
+      <p className="text-center text-foreground/60 text-xs xs:text-sm sm:text-base md:text-lg px-2.5 xs:px-3">
         And many more to come!
       </p>
     </>

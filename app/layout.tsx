@@ -16,6 +16,12 @@ export async function generateMetadata(): Promise<Metadata> {
     title: `${profile.name} - ${profile.title}`,
     description: profile.description,
     authors: [{ name: profile.name }],
+    viewport: {
+      width: 'device-width',
+      initialScale: 1,
+      maximumScale: 5,
+      userScalable: true,
+    },
     openGraph: {
       title: `${profile.name} - ${profile.title}`,
       description: profile.description,

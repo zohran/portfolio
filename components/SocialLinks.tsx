@@ -68,7 +68,7 @@ export default function SocialLinks({ socialLinks }: SocialLinksProps) {
   };
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-2.5 xs:gap-3 sm:gap-4">
       {Object.entries(socialLinks).map(([key, value]) => {
         if (!value) return null;
         return (
@@ -77,12 +77,12 @@ export default function SocialLinks({ socialLinks }: SocialLinksProps) {
             href={getHref(key, value)}
             target={key === 'email' ? undefined : '_blank'}
             rel={key === 'email' ? undefined : 'noopener noreferrer'}
-            className="w-10 h-10 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-colors duration-300"
+            className="w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:h-10 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 active:bg-foreground/30 transition-colors duration-300 touch-manipulation"
             aria-label={key}
           >
-            <div className="w-5 h-5 text-foreground/70">
+            <div className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 text-foreground/70">
               {iconMap[key] || (
-                <span className="text-xs font-medium">{key}</span>
+                <span className="text-[10px] xs:text-xs font-medium">{key}</span>
               )}
             </div>
           </a>

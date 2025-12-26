@@ -23,14 +23,14 @@ export default function Home() {
       <AboutSection profile={profile} />
       <EducationSection education={education} />
       <ExperienceSection experience={experience} />
-      <section id="portfolio" className="py-24 md:py-32 bg-muted relative overflow-hidden">
+      <section id="portfolio" className="py-14 xs:py-16 sm:py-20 md:py-24 lg:py-32 bg-muted relative overflow-hidden">
         {/* Background image effect */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-foreground/5" />
         </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="inline-block border-2 border-foreground px-6 py-2 mb-12">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight">
+        <div className="container mx-auto px-2.5 xs:px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
+          <div className="inline-block border-2 border-foreground px-3 xs:px-4 sm:px-5 md:px-6 py-1 xs:py-1.5 sm:py-2 mb-6 xs:mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight leading-tight">
               Portfolio
             </h2>
           </div>

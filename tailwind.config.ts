@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        'xs': '375px', // Extra small devices (small phones)
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
