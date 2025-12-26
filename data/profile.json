@@ -1,0 +1,8 @@
+{
+  "name": "Zohran Rasheed",
+  "title": "Full Stack Developer",
+  "description": "I’m a Full-Stack Software Engineer specializing in React, Next.js, TypeScript, and Node.js (NestJS). I build scalable, high-performance web and mobile applications with a strong focus on clean architecture, user experience, and real-world problem solving.",
+  "strengths": ["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS", "MongoDB", "MySQL", "Docker", "Kubernetes", "AWS", "GCP", "Azure"],
+  "profileImage": "/images/profile.png"
+}
+

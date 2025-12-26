@@ -1,0 +1,107 @@
+[
+  {
+    "id": "hellogov",
+    "name": "Hellogov",
+    "shortDescription": "AI-powered platform for streamlining government service applications in the USA",
+    "description": "Hellogov is a large-scale, AI-driven web platform built to simplify and automate government service workflows across DMV, immigration, passport, and visa processes in the United States. The platform allows users to securely submit documents, track application progress, and interact with multiple government services through a unified interface. On the backend, I contributed to designing and implementing scalable REST and GraphQL APIs using NestJS, integrating third-party services such as EasyPost for logistics, and optimizing PostgreSQL databases with TypeORM. A key aspect of the system is the integration of AI-powered data extraction and validation models, which significantly reduce manual processing and improve overall operational efficiency.",
+    "techStack": ["NestJS", "Node.js", "PostgreSQL", "TypeORM", "GraphQL", "EasyPost API", "AI Integration"],
+    "thumbnails": [
+      "/images/projects/hellogov/1.png",
+      "/images/projects/hellogov/2.png",
+      "/images/projects/hellogov/3.png"
+    ],
+    "repoLink": "",
+    "demoLink": "https://www.hellogov.com/",
+    "featured": true
+  },
+  {
+    "id": "thermalog",
+    "name": "Thermalog",
+    "shortDescription": "Real-time sensor monitoring and analytics dashboard",
+    "description": "Thermalog is a real-time IoT monitoring and analytics dashboard designed to provide continuous visibility into environmental conditions such as temperature, sensor health, and system status. The platform enables users to configure thresholds, receive automated alerts, and remotely manage connected devices. I worked on building interactive dashboards with React and Material UI, implementing Redux for predictable state management, and integrating RESTful APIs to stream live and historical sensor data.",
+    "techStack": ["React.js", "Redux", "Material UI", "REST APIs", "Node.js", "IoT Integrations"],
+    "thumbnails": [
+      "/images/projects/thermalog/1.png",
+      "/images/projects/thermalog/2.png",
+      "/images/projects/thermalog/3.png"
+    ],
+    "repoLink": "",
+    "demoLink": "https://thermalog.com.au/",
+    "featured": true
+  },
+  {
+    "id": "makman",
+    "name": "Makman",
+    "shortDescription": "Enterprise platform for managing and exploring oilfield and production data",
+    "description": "Makman is an enterprise-grade data platform developed for Target Oilfield Services L.L.C, Oman, focused on managing, visualizing, and commercializing critical datasets related to oil wells, production plants, and research operations. I contributed as a frontend developer, building modular and reusable UI components using React, SCSS, and Redux, and integrating RESTful APIs for large-scale data visualization.",
+    "techStack": ["React.js", "Redux", "SCSS", "REST APIs"],
+    "thumbnails": [
+      "/images/projects/makman/1.png",
+      "/images/projects/makman/2.png",
+      "/images/projects/makman/3.png"
+    ],
+    "repoLink": "",
+    "demoLink": "https://makman.om/",
+    "featured": true
+  },
+  {
+    "id": "ontegra-alegra",
+    "name": "Ontegra Alegra",
+    "shortDescription": "Customer-facing facility management mobile application with AI assistant",
+    "description": "Ontegra Alegra is a customer-facing mobile application designed to simplify facility management workflows, service requests, and asset tracking. Users can book services, monitor request statuses, and interact with an integrated AI assistant for guided support. I developed mobile features using React Native, Redux, and secure REST APIs with JWT-based authentication.",
+    "techStack": ["React Native", "Redux", "Node.js", "REST APIs", "JWT", "AI Integration"],
+    "thumbnails": [
+      "/images/projects/ontegra-alegra/home.png",
+      "/images/projects/ontegra-alegra/requests.png",
+      "/images/projects/ontegra-alegra/chat.png"
+    ],
+    "repoLink": "",
+    "demoLink": "https://play.google.com/store/apps/details?id=com.ontegra.customer",
+    "featured": false
+  },
+  {
+    "id": "ontegra-techi",
+    "name": "Ontegra Techi",
+    "shortDescription": "Enterprise-grade workforce and facility management solution",
+    "description": "Ontegra Techi is an enterprise-grade workforce and facility management solution designed to streamline operations, workforce coordination, and asset monitoring. I worked on React Native development, Firebase integration, and secure Node.js-based API workflows.",
+    "techStack": ["React Native", "Redux", "Node.js", "REST APIs", "Firebase", "JWT"],
+    "thumbnails": [
+      "/images/projects/ontegra-techi/tasks.png",
+      "/images/projects/ontegra-techi/workforce.png",
+      "/images/projects/ontegra-techi/assets.png"
+    ],
+    "repoLink": "",
+    "demoLink": "https://play.google.com/store/apps/details?id=com.ontegrataskmaster.techi",
+    "featured": false
+  },
+  {
+    "id": "loyalist",
+    "name": "Loyalist",
+    "shortDescription": "Fan engagement platform integrating music, messaging, and payments",
+    "description": "Loyalist is a fan engagement platform enabling artists and brands to deliver exclusive content, messaging, and monetized experiences. I implemented backend APIs, integrated Spotify, Twilio, and Stripe, and built secure payment and communication workflows.",
+    "techStack": ["Node.js", "Express.js", "REST APIs", "Spotify API", "Twilio", "Stripe", "JWT"],
+    "thumbnails": [
+      "/images/projects/loyalist/1.png",
+      "/images/projects/loyalist/2.png",
+      "/images/projects/loyalist/3.png"
+    ],
+    "repoLink": "",
+    "demoLink": "",
+    "featured": false
+  },
+  {
+    "id": "queue",
+    "name": "Queue",
+    "shortDescription": "Music streaming service with multi-platform integrations",
+    "description": "Queue is a music streaming service aggregating content from TikTok, Spotify, and Apple Music. I designed scalable backend APIs, handled third-party integrations, and optimized data pipelines for high-volume traffic.",
+    "techStack": ["Node.js", "Express.js", "REST APIs", "Spotify API", "TikTok API", "Apple Music API"],
+    "thumbnails": [
+      "/images/projects/queue/1.png",
+      "/images/projects/queue/2.png",
+      "/images/projects/queue/3.png"
+    ],
+    "repoLink": "",
+    "demoLink": "",
+    "featured": false
+  }
+]

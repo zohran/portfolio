@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Software Engineer (Frontend)",
+    "company": "Target Technologies Pakistan",
+    "location": "Islamabad, Pakistan",
+    "period": "2025 - Present",
+    "description": "Worked as a Frontend Engineer on enterprise-scale web applications, focusing on building responsive, user-friendly interfaces using modern React patterns. Collaborated closely with backend teams to integrate RESTful APIs, implemented global state management with Redux, and optimized UI performance for complex data-driven views. Actively participated in Agile ceremonies, code reviews, and feature planning to ensure high-quality, maintainable deliverables.",
+    "technologies": ["React.js", "SCSS", "Redux", "REST APIs", "HTML5", "CSS3"]
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Coding Crafts",
+    "location": "Lahore, Pakistan",
+    "period": "2024 - 2025",
+    "description": "Designed and developed scalable backend services and APIs for multiple production systems. Built REST and GraphQL APIs using NestJS and Node.js, optimized database performance with PostgreSQL and TypeORM, and integrated third-party services such as payment and notification providers. Contributed to system architecture decisions, implemented authentication and authorization flows, and ensured code quality through testing and CI/CD practices.",
+    "technologies": ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "TypeORM", "REST APIs", "GraphQL", "Git"]
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Codistan Ventures",
+    "location": "Islamabad, Pakistan",
+    "period": "2022 - 2024",
+    "description": "Worked as a full-stack engineer contributing to both backend APIs and frontend applications. Built scalable backend services using Node.js and Express, developed interactive user interfaces with React and Next.js, and implemented secure authentication using JWT. Optimized database queries across MongoDB and SQL databases, collaborated with cross-functional teams in Agile environments, and contributed to the delivery of multiple client-facing applications.",
+    "technologies": ["JavaScript", "React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "JWT", "REST APIs", "Git"]
+  }
+]

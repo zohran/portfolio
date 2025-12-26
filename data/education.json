@@ -1,0 +1,26 @@
+[
+  {
+    "degree": "Bachelor of Science in Software Engineering",
+    "institute": "Sukkur IBA University",
+    "year": "2018 - 2022",
+    "subjects": [
+      "Data Structures & Algorithms",
+      "Database Systems",
+      "Software Engineering",
+      "Web Development",
+      "Mobile Application Development",
+      "Computer Networks",
+      "Operating Systems",
+      "Machine Learning"
+    ],
+    "projects": [
+      "E-Commerce Platform - Full-stack web application",
+      "Task Management System - React & Node.js",
+      "Mobile Health App - React Native",
+      "AI Chatbot - Python & NLP"
+    ]
+  }
+]
+
+
+

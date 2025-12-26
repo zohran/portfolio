@@ -1,0 +1,32 @@
+{
+  "usingNow": [
+    { "name": "React", "icon": "⚛️" },
+    { "name": "TypeScript", "icon": "TS" },
+    { "name": "JavaScript", "icon": "JS" },
+    { "name": "Next.js", "icon": "N" },
+    { "name": "Node.js", "icon": "N" },
+    { "name": "Express", "icon": "E" },
+    { "name": "NestJS", "icon": "N" },
+    { "name": "Tailwind CSS", "icon": "T" },
+    { "name": "SCSS", "icon": "S" },
+    { "name": "CSS", "icon": "C" },
+    { "name": "map-libre", "icon": "M" },
+    { "name": "Redux", "icon": "R" },
+    { "name": "REST", "icon": "R" },
+    { "name": "GraphQL", "icon": "G" },
+    { "name": "TypeORM", "icon": "T" },
+    { "name": "Sequelize", "icon": "S" },
+    { "name": "Mongoose", "icon": "M" },
+    { "name": "MYSql", "icon": "M" },
+    { "name": "PostgreSQL", "icon": "P" },
+    { "name": "MongoDB", "icon": "M" },
+    { "name": "AWS", "icon": "A" },
+    { "name": "Docker", "icon": "D" },
+    { "name": "Git", "icon": "G" }
+  ],
+  "learning": [
+    { "name": "Python", "icon": "Py" },
+    { "name": "Data Science", "icon": "DS" }
+  ]
+}
+
