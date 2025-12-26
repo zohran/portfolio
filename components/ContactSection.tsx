@@ -34,7 +34,7 @@ export default function ContactSection() {
       if (response.ok) {
         setSubmitStatus({
           type: 'success',
-          message: 'Message sent successfully! I\'ll get back to you soon.',
+          message: 'Message sent successfully! I&apos;ll get back to you soon.',
         });
         // Reset form
         setFormData({
@@ -79,7 +79,7 @@ export default function ContactSection() {
           </div>
 
           <p className="text-foreground/70 text-lg leading-relaxed mb-12">
-            Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+            Feel free to reach out if you&apos;re looking for a developer, have a question, or just want to connect.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">

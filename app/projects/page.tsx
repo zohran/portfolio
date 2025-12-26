@@ -17,7 +17,7 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="text-muted-foreground mb-8 text-lg">
-          A collection of projects I've worked on, showcasing my skills and
+          A collection of projects I&apos;ve worked on, showcasing my skills and
           experience in web development.
         </p>
         <ProjectList projects={projects} />
