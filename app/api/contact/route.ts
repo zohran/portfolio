@@ -3,6 +3,18 @@ import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import nodemailer from 'nodemailer';
 
+// Helper to check if we're in a serverless environment
+function isServerlessEnvironment(): boolean {
+  // Vercel sets VERCEL=1
+  // AWS Lambda sets AWS_LAMBDA_FUNCTION_NAME
+  // Netlify sets NETLIFY
+  return !!(
+    process.env.VERCEL === '1' ||
+    process.env.AWS_LAMBDA_FUNCTION_NAME ||
+    process.env.NETLIFY
+  );
+}
+
 interface ContactSubmission {
   id: string;
   name: string;
@@ -48,21 +60,29 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     };
 
-    // Try to store in file (will fail on Vercel, but that's okay)
-    try {
-      const submissionsPath = join(process.cwd(), 'data', 'submissions.json');
-      if (existsSync(submissionsPath)) {
-        const fileContents = readFileSync(submissionsPath, 'utf8');
-        const submissions = JSON.parse(fileContents);
-        submissions.push(submission);
-        // Note: writeFileSync won't work on Vercel, but we'll try anyway
-        const { writeFileSync } = await import('fs');
-        writeFileSync(submissionsPath, JSON.stringify(submissions, null, 2));
-        console.log('Submission saved to file');
+    // Skip file storage on serverless environments (Vercel, etc.)
+    // File system is read-only in serverless functions, so we only send emails
+    // Submissions are stored via email notifications only
+    if (!isServerlessEnvironment()) {
+      try {
+        const submissionsPath = join(process.cwd(), 'data', 'submissions.json');
+        if (existsSync(submissionsPath)) {
+          const fileContents = readFileSync(submissionsPath, 'utf8');
+          const submissions = JSON.parse(fileContents);
+          submissions.push(submission);
+          // Use synchronous import to avoid issues
+          const fs = await import('fs');
+          fs.writeFileSync(submissionsPath, JSON.stringify(submissions, null, 2));
+          console.log('Submission saved to file');
+        }
+      } catch (fileError: unknown) {
+        // File operations don't work on serverless - this is expected
+        const errorMsg = fileError instanceof Error ? fileError.message : 'Unknown error';
+        console.log('File storage skipped:', errorMsg);
+        // Don't throw - this is not a critical error
       }
-    } catch (fileError) {
-      // File operations don't work on Vercel - this is expected
-      console.log('File storage skipped (serverless environment):', fileError instanceof Error ? fileError.message : 'Unknown');
+    } else {
+      console.log('File storage skipped (serverless environment detected - Vercel/Netlify/AWS Lambda)');
     }
 
     // Send email notification (this is the critical part)
